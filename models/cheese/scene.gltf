@@ -1,0 +1,183 @@
+{
+  "accessors": [
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 4837,
+      "max": [
+        0.63489997386932373,
+        0.46061000227928162,
+        0.23950000107288361
+      ],
+      "min": [
+        -0.46062999963760376,
+        -0.607200026512146,
+        -0.23950000107288361
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 58044,
+      "componentType": 5126,
+      "count": 4837,
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 12318,
+      "max": [
+        4836
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Ruslan Kirillov (https://sketchfab.com/brusbrusbrus)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/cheese-60514a50d9b049e1bd0afd48881096b7",
+      "title": "cheese"
+    },
+    "generator": "Sketchfab-6.24.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 49272,
+      "byteOffset": 0,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 116088,
+      "byteOffset": 49272,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 165360,
+      "uri": "scene.bin"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0.12629580150980074,
+        0.00094524221022154894,
+        0.00094524221022154894
+      ],
+      "name": "chesee",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.81036995104363518,
+          0.61869791110182182,
+          0.089383007305503859,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.56269054878048785
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Circle_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0
+          },
+          "indices": 2,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "RootNode (gltf orientation matrix)",
+      "rotation": [
+        -0.70710678118654746,
+        -0,
+        -0,
+        0.70710678118654757
+      ]
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "RootNode (model correction matrix)"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "Root"
+    },
+    {
+      "children": [
+        4
+      ],
+      "matrix": [
+        1.09829,
+        2.4530499999999997,
+        0.24859000000000003,
+        0,
+        -2.4624099999999998,
+        1.0773999999999999,
+        0.24748000000000003,
+        0,
+        0.12569,
+        -0.32749000000000006,
+        2.6762699999999997,
+        0,
+        0.076600000000000015,
+        2.2995000000000001,
+        2.21231,
+        1
+      ],
+      "name": "Circle"
+    },
+    {
+      "mesh": 0,
+      "name": "Circle_0"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "OSG_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}
+

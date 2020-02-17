@@ -6,33 +6,112 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Document</title>
 
-     <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+     <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
 
      <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 </head>
 
 <body style="margin: 0px; overflow: hidden;">
-     
      <a-scene embedded arjs="sourceType: webcam;">
-           
-          <a-marker type="pattern" url="patterns/pattern-marker-a.patt">
-               <a-entity scale="0.5 0.5 0.5">
-                    <a-entity scale="0.1 0.1 0.1">
-                         <a-entity obj-model="obj: url(models/bottle/bottle.obj); mtl: url(models/bottle/bottle.mtl)" scale="0.1 0.1 0.1" rotation="270 0 0" position="0 0 30">
-                              
-                              <a-animation attribute="rotation" begin="click" repeat="indefinite" to="0 360 0"></a-animation>
 
-                         </a-entity>
-                    </a-entity>
-               </a-entity>
+          <!-- pepper -->
+          <a-marker type="pattern" url="patterns/pattern-marker-a.patt">
+                    <a-entity gltf-model="url(models/pepper/scene.gltf)" position="0 2 -5" scale="0.1 0.1 0.1"></a-entity>
           </a-marker>
 
-          <a-entity camera>
-               <a-cursor color="#FF0000" />
-          </a-entity>
+
+          <!-- salt -->
+          <!-- <a-marker type="pattern" url="patterns/pattern-marker-b.patt">
+               <a-entity gltf-model="url(models/salt/scene.gltf)"></a-entity>
+          </a-marker> -->
+
+
+          <!-- lettuce -->
+          <!-- <a-marker type="pattern" url="patterns/pattern-marker-c.patt">
+               <a-entity scale="0.01 0.01 0.01">
+                    <a-entity scale="0.01 0.01 0.01">
+                         <a-entity gltf-model="url(models/lettuce/scene.gltf)"></a-entity>
+                    </a-entity>
+               </a-entity>
+          </a-marker> -->
+
+
+          <!-- cheese -->
+          <!-- <a-marker type="pattern" url="patterns/pattern-marker-d.patt">
+               <a-entity gltf-model="url(models/cheese/scene.gltf)" scale="0.3 0.3 0.3"></a-entity>
+          </a-marker> -->
+
+
+          <!-- onion -->
+          <!-- <a-marker type="pattern" url="patterns/pattern-marker-e.patt">
+               <a-entity gltf-model="url(models/onion/scene.gltf)" ></a-entity>
+          </a-marker> -->
+
+
+          <!-- mustard -->
+          <!-- <a-marker type="pattern" url="patterns/pattern-marker-f.patt">
+               <a-entity gltf-model="url(models/mustard/scene.gltf)" scale="5 5 5"></a-entity>
+          </a-marker> -->
+
+
+          <!-- mayonnaise -->
+          <!-- <a-marker type="pattern" url="patterns/pattern-marker-g.patt">
+               <a-entity gltf-model="url(models/mayonnaise/scene.gltf)" scale="0.1 0.1 0.1"></a-entity>
+          </a-marker> -->
+
+
+          <!-- tomato -->
+          <!-- <a-marker type="pattern" url="patterns/pattern-marker-h.patt">
+               <a-entity gltf-model="url(models/tomato/scene.gltf)" scale="0.1 0.1 0.1"></a-entity>
+          </a-marker> -->
+
+
+          <!-- bread -->
+          <!-- <a-marker type="pattern" url="patterns/pattern-marker-i.patt">
+               <a-entity gltf-model="url(models/bread/scene.gltf)" scale="0.3 0.3 0.3"></a-entity>
+          </a-marker> -->
+
+
+          <!-- beef -->
+          <!-- <a-marker type="pattern" url="patterns/pattern-marker-j.patt">
+               <a-entity scale="0.3 0.3 0.3">
+                    <a-entity scale="0.01 0.01 0.01">
+                         <a-entity gltf-model="url(models/beef/scene.gltf)"></a-entity>
+                    </a-entity>
+               </a-entity>
+          </a-marker> -->
+
+
+          <!-- <a-entity camera> -->
+          <!-- <a-cursor color="#FF0000" /> -->
+          <!-- </a-entity> -->
      </a-scene>
 
-     <!-- <a-scene>
+
+
+
+
+     <script>
+          AFRAME.registerComponent('cursor-listener', {
+               init: function () {
+                    var lastIndex = -1;
+                    var COLORS = ['red', 'green', 'blue'];
+                    this.el.addEventListener('click', function (evt) {
+                         lastIndex = (lastIndex + 1) % COLORS.length;
+                         this.setAttribute('material', 'color', COLORS[lastIndex]);
+                         console.log('I was clicked at: ', evt.detail.intersection.point);
+                    });
+               }
+          });
+     </script>
+
+</body>
+
+</html>
+
+<!-- <a-entity obj-model="obj: url(models/onion/mesh.obj); mtl: url(models/onion/mesh.obj.mtl)"></a-entity> -->
+
+<!-- <a-scene>
           
           <a-box id="target" material="color: green"></a-box>
 
@@ -45,13 +124,6 @@
           </a-entity>
      </a-scene> -->
 
-
-     
-
-     
-</body>
-</html>
-
 <!-- <a-scene embedded arjs>
           <a-marker-camera type="pattern" url="patterns/pattern-marker-a.patt">
                <a-entity scale="0.5 0.5 0.5">
@@ -61,3 +133,13 @@
                </a-entity>
           </a-marker-camera>   
      </a-scene> -->
+
+<!-- <a-entity scale="0.5 0.5 0.5">
+                    <a-entity scale="0.1 0.1 0.1">
+                         <a-entity obj-model="obj: url(models/bottle/bottle.obj); mtl: url(models/bottle/bottle.mtl)" scale="0.1 0.1 0.1" rotation="270 0 0" position="0 0 30">
+                              
+                              <a-animation attribute="rotation" begin="click" repeat="indefinite" to="0 360 0"></a-animation>
+
+                         </a-entity>
+                    </a-entity>
+               </a-entity> -->
