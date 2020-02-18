@@ -8,15 +8,24 @@
 
      <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
 
+     <!-- <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script> -->
+
      <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 </head>
 
 <body style="margin: 0px; overflow: hidden;">
-     <a-scene embedded arjs="sourceType: webcam;">
+     <a-scene >
+
+          <a-entity camera>
+               <a-entity 
+                    cursor="fuse: false; maxDistance: 30;"
+                    position="0 0 -5" geometry="primitive: ring" material="color: #fe123; shader: flat" />
+          </a-entity>
 
           <!-- pepper -->
           <a-marker type="pattern" url="patterns/pattern-marker-a.patt">
-                    <a-entity gltf-model="url(models/pepper/scene.gltf)" position="0 0 -1.5" rotation="-90 0 0" scale="0.1 0.1 0.1"></a-entity>
+               <a-entity id="pepper" gltf-model="url(models/pepper/scene.gltf)" position="0 0 -1.5" rotation="-90 0 0"
+                    scale="0.1 0.1 0.1"></a-entity>
           </a-marker>
 
 
@@ -30,7 +39,7 @@
           <a-marker type="pattern" url="patterns/pattern-marker-c.patt">
                <a-entity scale="0.01 0.01 0.01" position="0 0 -1.5" rotation="-65 0 0">
                     <a-entity scale="0.01 0.01 0.01">
-                         <a-entity gltf-model="url(models/lettuce/scene.gltf)" ></a-entity>
+                         <a-entity gltf-model="url(models/lettuce/scene.gltf)"></a-entity>
                     </a-entity>
                </a-entity>
           </a-marker>
@@ -38,7 +47,8 @@
 
           <!-- cheese -->
           <a-marker type="pattern" url="patterns/pattern-marker-d.patt">
-               <a-entity gltf-model="url(models/cheese/scene.gltf)" scale="0.3 0.3 0.3" position="0 0 -1" rotation="-75 0 0"></a-entity>
+               <a-entity gltf-model="url(models/cheese/scene.gltf)" scale="0.3 0.3 0.3" position="0 0 -1"
+                    rotation="-75 0 0"></a-entity>
           </a-marker>
 
 
@@ -50,25 +60,29 @@
 
           <!-- mustard -->
           <a-marker type="pattern" url="patterns/pattern-marker-f.patt">
-               <a-entity gltf-model="url(models/mustard/scene.gltf)" scale="13 13 13" position="0 0 -0.7" rotation="-90 0 0"></a-entity>
+               <a-entity gltf-model="url(models/mustard/scene.gltf)" scale="13 13 13" position="0 0 -0.7"
+                    rotation="-90 0 0"></a-entity>
           </a-marker>
 
 
           <!-- mayonnaise -->
           <a-marker type="pattern" url="patterns/pattern-marker-g.patt">
-               <a-entity gltf-model="url(models/mayonnaise/scene.gltf)" scale="0.2 0.2 0.2" position="0 0 -1.2" rotation="-70 0 0"></a-entity>
+               <a-entity gltf-model="url(models/mayonnaise/scene.gltf)" scale="0.2 0.2 0.2" position="0 0 -1.2"
+                    rotation="-70 0 0"></a-entity>
           </a-marker>
 
 
           <!-- tomato -->
           <a-marker type="pattern" url="patterns/pattern-marker-h.patt">
-               <a-entity gltf-model="url(models/tomato/scene.gltf)" scale="0.1 0.1 0.1" position="0 0 -1" rotation="-60 0 0"></a-entity>
+               <a-entity gltf-model="url(models/tomato/scene.gltf)" scale="0.1 0.1 0.1" position="0 0 -1"
+                    rotation="-60 0 0"></a-entity>
           </a-marker>
 
 
           <!-- bread -->
           <a-marker type="pattern" url="patterns/pattern-marker-i.patt">
-               <a-entity gltf-model="url(models/bread/scene.gltf)" scale="0.5 0.5 0.5" position="0 0 -1.5" rotation="-60 0 0"></a-entity>
+               <a-entity gltf-model="url(models/bread/scene.gltf)" scale="0.5 0.5 0.5" position="0 0 -1.5"
+                    rotation="-60 0 0"></a-entity>
           </a-marker>
 
 
@@ -76,23 +90,20 @@
           <a-marker type="pattern" url="patterns/pattern-marker-j.patt">
                <a-entity scale="0.3 0.3 0.3" position="0 0 -1.5" rotation="-70 0 0">
                     <a-entity scale="0.01 0.01 0.01">
-                         <a-entity gltf-model="url(models/beef/scene.gltf)" ></a-entity>
+                         <a-entity gltf-model="url(models/beef/scene.gltf)"></a-entity>
                     </a-entity>
                </a-entity>
           </a-marker>
 
 
-          <!-- <a-entity camera> -->
-          <!-- <a-cursor color="#FF0000" /> -->
-          <!-- </a-entity> -->
+          
      </a-scene>
 
-
-
-
-
-     
-
+     <script>
+          document.querySelector("#pepper").addEventListener("click", function(){
+               console.log("I was clicked!")
+          })
+     </script>
 </body>
 
 </html>
