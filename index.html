@@ -32,7 +32,7 @@
 
           <!-- pepper -->
           <a-marker type="pattern" url="patterns/pattern-marker-a.patt">
-               <a-entity id="pepper" gltf-model="url(models/pepper/scene.gltf)" position="0 0 -1.5" rotation="-90 0 0"
+               <a-entity id="pepper" data-id="2" gltf-model="url(models/pepper/scene.gltf)" position="0 0 -1.5" rotation="-90 0 0"
                     scale="0.1 0.1 0.1"></a-entity>
                     
           </a-marker>
@@ -83,7 +83,7 @@
 
           <!-- tomato -->
           <a-marker type="pattern" url="patterns/pattern-marker-h.patt">
-               <a-entity id="tomato" gltf-model="url(models/tomato/scene.gltf)" scale="0.1 0.1 0.1" position="0 0 -1" rotation="-60 0 0"></a-entity>
+               <a-entity id="tomato" data-id="1" gltf-model="url(models/tomato/scene.gltf)" scale="0.1 0.1 0.1" position="0 0 -1" rotation="-60 0 0"></a-entity>
           </a-marker>
 
 
@@ -106,8 +106,9 @@
      <script>
           document.querySelector("#pepper").addEventListener("click", function(){
                console.log("Pepper was clicked!");
-               console.log(this.getAttribute("id"));
-               // window.location = "http://www.google.com/";
+               // let id =console.log(this.getAttribute("data-id"));
+               // window.location = "http://www.google.com"
+               // window.location = `http://www.oursit.herokku.com/brandRec/${id}`;
           })
           
           document.querySelector("#salt").addEventListener("click", function(){
@@ -147,9 +148,10 @@
           })
      
           document.querySelector("#tomato").addEventListener("click", function(){
-               console.log("tomato was clicked!");
-               console.log(this.getAttribute("id"));
-               // window.location = "http://www.google.com/";
+               
+               let dataId = parseInt(this.getAttribute("data-id"));
+               console.log(dataId);
+               window.location = `https://seefood-app.herokuapp.com/brandrec/${dataId}`;
           })
 
           document.querySelector("#bread").addEventListener("click", function(){
