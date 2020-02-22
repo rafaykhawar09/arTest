@@ -32,7 +32,7 @@
 
           <!-- pepper -->
           <a-marker type="pattern" url="patterns/pattern-marker-a.patt">
-               <a-entity id="pepper" data-id="2" gltf-model="url(models/pepper/scene.gltf)" position="0 0 -1.5" rotation="-90 0 0"
+               <a-entity id="pepper" data-id="2" gltf-model="url(models/pepper/scene.gltf)" position="0 0 0" rotation="-90 0 0"
                     scale="0.1 0.1 0.1"></a-entity>
                     
           </a-marker>
@@ -40,13 +40,13 @@
 
           <!-- salt -->
           <a-marker type="pattern" url="patterns/pattern-marker-b.patt">
-               <a-entity id="salt" gltf-model="url(models/salt/scene.gltf)" position="-0.5 0 -1.7" rotation="-90 0 0"></a-entity>
+               <a-entity id="salt" gltf-model="url(models/salt/scene.gltf)" position="0 0 0" rotation="-90 0 0"></a-entity>
           </a-marker>
 
 
           <!-- lettuce -->
           <a-marker type="pattern" url="patterns/pattern-marker-c.patt">
-               <a-entity id="lettuce" scale="0.01 0.01 0.01" position="0 0 -1.5" rotation="-65 0 0">
+               <a-entity id="lettuce" scale="0.01 0.01 0.01" position="0 0 0" rotation="-65 0 0">
                     <a-entity scale="0.01 0.01 0.01">
                          <a-entity gltf-model="url(models/lettuce/scene.gltf)"></a-entity>
                     </a-entity>
@@ -56,46 +56,46 @@
 
           <!-- cheese -->
           <a-marker type="pattern" url="patterns/pattern-marker-d.patt">
-               <a-entity id="cheese" gltf-model="url(models/cheese/scene.gltf)" scale="0.3 0.3 0.3" position="0 0 -1"
+               <a-entity id="cheese" gltf-model="url(models/cheese/scene.gltf)" scale="0.3 0.3 0.3" position="0 0 0"
                     rotation="-75 0 0"></a-entity>
           </a-marker>
 
 
           <!-- onion -->
           <a-marker type="pattern" url="patterns/pattern-marker-e.patt">
-               <a-entity id="onion" gltf-model="url(models/onion/scene.gltf)" position="0 0 -1.5" rotation="-70 0 0"></a-entity>
+               <a-entity id="onion" gltf-model="url(models/onion/scene.gltf)" position="0 0 0" rotation="-70 0 0"></a-entity>
           </a-marker>
 
 
           <!-- mustard -->
           <a-marker type="pattern" url="patterns/pattern-marker-f.patt">
-               <a-entity id="mustard" gltf-model="url(models/mustard/scene.gltf)" scale="13 13 13" position="0 0 -0.7"
+               <a-entity id="mustard" gltf-model="url(models/mustard/scene.gltf)" scale="13 13 13" position="0 0 0"
                     rotation="-90 0 0"></a-entity>
           </a-marker>
 
 
           <!-- mayonnaise -->
           <a-marker type="pattern" url="patterns/pattern-marker-g.patt">
-               <a-entity id="mayonnaise" gltf-model="url(models/mayonnaise/scene.gltf)" scale="0.2 0.2 0.2" position="0 0 -1.2"
+               <a-entity id="mayonnaise" gltf-model="url(models/mayonnaise/scene.gltf)" scale="0.2 0.2 0.2" position="0 0 0"
                     rotation="-70 0 0"></a-entity>
           </a-marker>
 
 
           <!-- tomato -->
           <a-marker type="pattern" url="patterns/pattern-marker-h.patt">
-               <a-entity id="tomato" data-id="1" gltf-model="url(models/tomato/scene.gltf)" scale="0.1 0.1 0.1" position="0 0 -1" rotation="-60 0 0"></a-entity>
+               <a-entity id="tomato" data-id="1" gltf-model="url(models/tomato/scene.gltf)" scale="0.1 0.1 0.1" position="0 0 0" rotation="-60 0 0"></a-entity>
           </a-marker>
 
 
           <!-- bread -->
           <a-marker type="pattern" url="patterns/pattern-marker-i.patt">
-               <a-entity id="bread" gltf-model="url(models/bread/scene.gltf)" scale="0.5 0.5 0.5" position="0 0 -1.5" rotation="-60 0 0"></a-entity>
+               <a-entity id="bread" gltf-model="url(models/bread/scene.gltf)" scale="0.5 0.5 0.5" position="0 0 0" rotation="-60 0 0"></a-entity>
           </a-marker>
 
 
           <!-- beef -->
           <a-marker type="pattern" url="patterns/pattern-marker-j.patt">
-               <a-entity id="beef" scale="0.3 0.3 0.3" position="0 0 -1.5" rotation="-70 0 0">
+               <a-entity id="beef" scale="0.3 0.3 0.3" position="0 0 0" rotation="-70 0 0">
                     <a-entity scale="0.01 0.01 0.01">
                          <a-entity gltf-model="url(models/beef/scene.gltf)"></a-entity>
                     </a-entity>
@@ -160,8 +160,8 @@
                // window.location = "http://www.google.com/";
           })
 
-          document.querySelector("#bread").addEventListener("click", function(){
-               console.log("bread was clicked!");
+          document.querySelector("#beef").addEventListener("click", function(){
+               console.log("beef was clicked!");
                console.log(this.getAttribute("id"));
                // window.location = "http://www.google.com/";
           })
