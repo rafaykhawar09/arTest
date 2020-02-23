@@ -25,7 +25,7 @@
           <a-entity camera>
                <a-entity 
                     cursor="fuse: false; maxDistance: 30;"
-                    scale = "4 4 4"
+                    scale = "0.1 0.1 0.1z    "
                     position="0 0 -5" geometry="primitive: ring" material="color: hsl(0, 42%, 75%); shader: flat" 
                />
           </a-entity>
@@ -34,7 +34,8 @@
           <a-marker type="pattern" url="patterns/pattern-marker-a.patt">
                <a-entity id="pepper" data-id="2" gltf-model="url(models/pepper/scene.gltf)" position="0 0 0" rotation="-90 0 0"
                     scale="0.1 0.1 0.1"></a-entity>
-                    
+               
+               <a-image src="images/information-icon.png" rotation="-90 0 0" position="0 0 1.5" scale="0.5 0.5 0.5"></a-image>
           </a-marker>
 
 
@@ -152,6 +153,8 @@
                let dataId = parseInt(this.getAttribute("data-id"));
                console.log(dataId);
                window.location = `https://seefood-app.herokuapp.com/brandrec/${dataId}`;
+               // open(url, `https://seefood-app.herokuapp.com/brandrec/${dataId}`);
+               //  = `https://seefood-app.herokuapp.com/brandrec/${dataId}`;
           })
 
           document.querySelector("#bread").addEventListener("click", function(){
