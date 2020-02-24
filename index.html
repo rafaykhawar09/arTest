@@ -145,6 +145,44 @@
                     <a-entity gltf-model="url(models/ginger/scene.gltf)"></a-entity>
                </a-entity>
           </a-marker>
+          
+          <!-- frozen veggies -->
+          <a-marker type="pattern" url="patterns/pattern-frozenVeggies.patt">
+               <a-box src="images/frozenveggies.jpg" scale="2 2 2" ></a-box>
+               <a-image src="images/buttonseefood.png" rotation="-90 0 0" position="0 0 -3" scale="3 1 1"></a-image>
+          </a-marker>
+
+          <!-- Sesame oil -->
+          <a-marker type="pattern" url="patterns/pattern-sesameOil.patt">
+               <a-box src="images/sesameoil.jpg" scale="2 2 2" ></a-box>
+               <a-image src="images/buttonseefood.png" rotation="-90 0 0" position="0 0 -3" scale="3 1 1"></a-image>
+          </a-marker>
+
+          <!-- egg -->
+          <a-marker type="pattern" url="patterns/pattern-eggs.patt">
+               <!-- <a-entity id="egg" scale="0.6 0.6 0.6" position="0 0 .5" rotation="-70 0 0"> -->
+                    <a-entity scale="0.02 0.02 0.02" rotation="-70 0 0">
+                         <a-entity gltf-model="url(models/egg/scene.gltf)"></a-entity>
+                    </a-entity>
+               <!-- </a-entity> -->
+               <a-image src="images/buttonseefood.png" rotation="-90 0 0" position="0 0 -2" scale="3 1 1"></a-image>
+          </a-marker>
+
+          <!-- chicken -->
+          <a-marker type="pattern" url="patterns/pattern-chicken.patt">
+                    <a-entity scale="1 1 1" rotation="-70 0 0">
+                         <a-entity gltf-model="url(models/chicken/scene.gltf)"></a-entity>
+                    </a-entity>
+               <a-image src="images/buttonseefood.png" rotation="-90 0 0" position="0 0 -3" scale="3 1 1"></a-image>
+          </a-marker>
+
+          <!-- Joe's face -->
+          <a-marker type="pattern" preset="hiro">
+               <a-box src="images/joepic.gif" scale="1 1 1"  ></a-box>
+          </a-marker>
+
+
+
      </a-scene>
 
      <script>
