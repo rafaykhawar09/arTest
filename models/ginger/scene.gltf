@@ -3,74 +3,119 @@
     {
       "bufferView": 2,
       "componentType": 5126,
-      "count": 26055,
+      "count": 2,
       "max": [
-        1.6323039531707764,
-        10.936927795410156,
-        0.14925000071525574
+        5.7331619262695312,
+        1.8681509494781494,
+        3.7116310596466064
       ],
       "min": [
-        -1.4665470123291016,
-        7.7971792221069336,
-        -1.4360619783401489
+        5.6500401496887207,
+        1.5300710201263428,
+        3.5337390899658203
       ],
       "type": "VEC3"
-    },
-    {
-      "bufferView": 2,
-      "byteOffset": 312660,
-      "componentType": 5126,
-      "count": 26055,
-      "max": [
-        0.99974888563156128,
-        0.99997913837432861,
-        0.99997490644454956
-      ],
-      "min": [
-        -0.99988949298858643,
-        -0.99991536140441895,
-        -0.99994713068008423
-      ],
-      "type": "VEC3"
-    },
-    {
-      "bufferView": 3,
-      "componentType": 5126,
-      "count": 26055,
-      "max": [
-        0.99994593858718872,
-        0.99943888187408447,
-        0.99979120492935181,
-        1
-      ],
-      "min": [
-        -0.99986076354980469,
-        -0.99999284744262695,
-        -0.99980300664901733,
-        -1
-      ],
-      "type": "VEC4"
     },
     {
       "bufferView": 1,
       "componentType": 5126,
-      "count": 26055,
+      "count": 2,
       "max": [
-        0.91949200630187988,
-        0.99993401765823364
+        0,
+        0
       ],
       "min": [
-        2.2000000171829015e-05,
-        1.8999999156221747e-05
+        0,
+        0
       ],
       "type": "VEC2"
     },
     {
       "bufferView": 0,
       "componentType": 5125,
-      "count": 150000,
+      "count": 2,
       "max": [
-        26054
+        1
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 24,
+      "componentType": 5126,
+      "count": 4115,
+      "max": [
+        11.540140151977539,
+        22.323820114135742,
+        9.8643026351928711
+      ],
+      "min": [
+        -13.719109535217285,
+        -15.971830368041992,
+        0.022761000320315361
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 49404,
+      "componentType": 5126,
+      "count": 4115,
+      "max": [
+        0.99974232912063599,
+        0.99607992172241211,
+        0.99987536668777466
+      ],
+      "min": [
+        -0.99972540140151978,
+        -0.99790859222412109,
+        -0.9999922513961792
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 4115,
+      "max": [
+        0.99994754791259766,
+        0.9505884051322937,
+        0.99922573566436768,
+        1
+      ],
+      "min": [
+        -0.99994140863418579,
+        -0.97487437725067139,
+        -0.99808520078659058,
+        1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 16,
+      "componentType": 5126,
+      "count": 4115,
+      "max": [
+        0.98627698421478271,
+        0.97830498218536377
+      ],
+      "min": [
+        0.0064229997806251049,
+        0.015275999903678894
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 8,
+      "componentType": 5125,
+      "count": 22380,
+      "max": [
+        4114
       ],
       "min": [
         0
@@ -80,42 +125,42 @@
   ],
   "asset": {
     "extras": {
-      "author": "insomnia333 (https://sketchfab.com/insomnia333)",
+      "author": "Christian Lipski (https://sketchfab.com/extracrispi)",
       "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
-      "source": "https://sketchfab.com/models/a5923998c60547c7a7887f11f2f2088d",
-      "title": "[3D-Scan] Ginger Root"
+      "source": "https://sketchfab.com/3d-models/ginger-e8e250f94c6a4c51b71f15e1a3b36e25",
+      "title": "Ginger"
     },
-    "generator": "Sketchfab-3.32.5",
+    "generator": "Sketchfab-5.47.0",
     "version": "2.0"
   },
   "bufferViews": [
     {
       "buffer": 0,
-      "byteLength": 600000,
+      "byteLength": 89528,
       "byteOffset": 0,
       "name": "floatBufferViews",
       "target": 34963
     },
     {
       "buffer": 0,
-      "byteLength": 208440,
-      "byteOffset": 600000,
+      "byteLength": 32936,
+      "byteOffset": 89528,
       "byteStride": 8,
       "name": "floatBufferViews",
       "target": 34962
     },
     {
       "buffer": 0,
-      "byteLength": 625320,
-      "byteOffset": 808440,
+      "byteLength": 98784,
+      "byteOffset": 122464,
       "byteStride": 12,
       "name": "floatBufferViews",
       "target": 34962
     },
     {
       "buffer": 0,
-      "byteLength": 416880,
-      "byteOffset": 1433760,
+      "byteLength": 65840,
+      "byteOffset": 221248,
       "byteStride": 16,
       "name": "floatBufferViews",
       "target": 34962
@@ -123,50 +168,53 @@
   ],
   "buffers": [
     {
-      "byteLength": 1850640,
+      "byteLength": 287088,
       "uri": "scene.bin"
     }
   ],
-  "extensionsRequired": [
-    "KHR_materials_pbrSpecularGlossiness"
-  ],
-  "extensionsUsed": [
-    "KHR_materials_pbrSpecularGlossiness"
-  ],
   "images": [
     {
-      "uri": "textures/Ingwer_diffuse.jpeg"
+      "uri": "textures/None_baseColor.jpeg"
+    },
+    {
+      "uri": "textures/None_metallicRoughness.png"
+    },
+    {
+      "uri": "textures/None_normal.jpeg"
     }
   ],
   "materials": [
     {
       "doubleSided": true,
-      "emissiveFactor": [
-        0,
-        0,
-        0
-      ],
-      "extensions": {
-        "KHR_materials_pbrSpecularGlossiness": {
-          "diffuseFactor": [
-            1,
-            1,
-            1,
-            1
-          ],
-          "diffuseTexture": {
-            "index": 0,
-            "texCoord": 0
-          },
-          "glossinessFactor": 0.48951981709999998,
-          "specularFactor": [
-            0,
-            0,
-            0
-          ]
-        }
+      "name": "None",
+      "normalTexture": {
+        "index": 2,
+        "scale": 1,
+        "texCoord": 0
       },
-      "name": "Ingwer"
+      "occlusionTexture": {
+        "index": 1,
+        "strength": 1,
+        "texCoord": 0
+      },
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "baseColorTexture": {
+          "index": 0,
+          "texCoord": 0
+        },
+        "metallicFactor": 0,
+        "metallicRoughnessTexture": {
+          "index": 1,
+          "texCoord": 0
+        },
+        "roughnessFactor": 0.78366047250000004
+      }
     }
   ],
   "meshes": [
@@ -174,12 +222,25 @@
       "primitives": [
         {
           "attributes": {
-            "NORMAL": 1,
             "POSITION": 0,
-            "TANGENT": 2,
-            "TEXCOORD_0": 3
+            "TEXCOORD_0": 1
           },
-          "indices": 4,
+          "indices": 2,
+          "material": 0,
+          "mode": 1
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 4,
+            "POSITION": 3,
+            "TANGENT": 5,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
           "material": 0,
           "mode": 4
         }
@@ -207,12 +268,17 @@
     },
     {
       "children": [
-        3
+        3,
+        4
       ],
-      "name": "Ingwer.obj.cleaner.materialmerger.gles"
+      "name": "ginger.obj.cleaner.materialmerger.gles"
     },
     {
       "mesh": 0,
+      "name": ""
+    },
+    {
+      "mesh": 1,
       "name": ""
     }
   ],
@@ -237,6 +303,14 @@
     {
       "sampler": 0,
       "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
     }
   ]
 }

@@ -13,12 +13,6 @@
      <!-- <script src="https://raw.githack.com/jeromeetienne/AR.js/2.2.1/aframe/build/aframe-ar.js"></script> -->
 
      <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
-
-     <style>
-          body{
-               color: hsl(0, 42%, 75%);
-          }
-     </style>
 </head>
 
 <body style="margin: 0px; overflow: hidden;">
@@ -39,8 +33,6 @@
                <a-entity scale="0.2 0.2 0.2" position="0.6 0 2" rotation="270 0 0">
                          <a-entity id="salt-pepper" gltf-model="url(models/saltAndPepper/scene.gltf)"  scale="0.1 0.1 0.1" rotation="0 90 0"></a-entity>
                </a-entity>
-
-               <a-image src="images/buttonseefood.png" rotation="-90 0 0" position="0 0 -2" scale="3 1 1"></a-image>
           </a-marker>
 
 
@@ -51,24 +43,18 @@
                          <a-entity gltf-model="url(models/lettuce/scene.gltf)"></a-entity>
                     </a-entity>
                </a-entity>
-
-               <a-image src="images/buttonseefood.png" rotation="-90 0 0" position="0 0 -2" scale="3 1 1"></a-image>
           </a-marker>
 
 
           <!-- cheese -->
           <a-marker type="pattern" url="patterns/pattern-cheese.patt">
                <a-entity id="cheese" gltf-model="url(models/cheese/scene.gltf)" scale="0.6 0.6 0.6" position="0 0 1.5" rotation="-75 0 0"></a-entity>
-
-               <a-image src="images/buttonseefood.png" rotation="-90 0 0" position="0 0 -2" scale="3 1 1"></a-image>
           </a-marker>
 
 
           <!-- onion -->
           <a-marker type="pattern" url="patterns/pattern-onion.patt">
                <a-entity id="onion" gltf-model="url(models/onion/scene.gltf)" position="0 0 0" rotation="-70 0 0"></a-entity>
-
-               <a-image src="images/buttonseefood.png" rotation="-90 0 0" position="0 0 -2" scale="3 1 1"></a-image>
           </a-marker>
 
 
@@ -97,8 +83,6 @@
           <!-- bread -->
           <a-marker type="pattern" url="patterns/pattern-burgerBun.patt">
                <a-entity id="bread" gltf-model="url(models/bread/scene.gltf)" scale="0.5 0.5 0.5" position="0 0 0" rotation="-60 0 0"></a-entity>
-
-               <a-image src="images/buttonseefood.png" rotation="-90 0 0" position="0 0 -2" scale="3 1 1"></a-image>
           </a-marker>
 
 
@@ -109,16 +93,13 @@
                          <a-entity gltf-model="url(models/beef/scene.gltf)"></a-entity>
                     </a-entity>
                </a-entity>
-
-               <a-image src="images/buttonseefood.png" rotation="-90 0 0" position="0 0 -2" scale="3 1 1"></a-image>
           </a-marker>
 
 
           <!-- soySauce -->
           <a-marker type="pattern" url="patterns/pattern-soySauce.patt">
-              
-               <a-entity rotation="-90 0 0" position="0 0 10">
-                    <a-entity gltf-model="url(models/soySauce/soy_sauce_00.glb);" ></a-entity>
+               <a-entity rotation="-90 0 0" position="0 0 45" scale="50 50 50">
+                    <a-entity obj-model="obj:url(models/soySauce/soy_sauce_00.obj); mtl:url(models/soySauce/soy_sauce_00.mtl)"></a-entity>
                </a-entity>
           </a-marker>
 
@@ -133,7 +114,7 @@
           
           <!-- garlic -->
           <a-marker type="pattern" url="patterns/pattern-garlic.patt">
-               <a-entity scale="1 1 1" rotation="-90 0 0" position="0 0 0">
+               <a-entity scale="3.5 3.5 3.5" rotation="-90 0 0" position="0 0 0">
                     <a-entity gltf-model="url(models/garlic/scene.gltf)"></a-entity>
                </a-entity>
           </a-marker>
@@ -141,39 +122,35 @@
 
           <!-- ginger -->
           <a-marker type="pattern" url="patterns/pattern-ginger.patt">
-               <a-entity scale="1 1 1" rotation="-90 0 0">
-                    <a-entity gltf-model="url(models/ginger/scene.gltf)"></a-entity>
-               </a-entity>
+               <a-entity gltf-model="url(models/ginger/scene.gltf)" scale="0.1 0.1 0.1" rotation="0 0 0"></a-entity>
           </a-marker>
           
           <!-- frozen veggies -->
           <a-marker type="pattern" url="patterns/pattern-frozenVeggies.patt">
                <a-box src="images/frozenveggies.jpg" scale="2 2 2" ></a-box>
+
                <a-image src="images/buttonseefood.png" rotation="-90 0 0" position="0 0 -3" scale="3 1 1"></a-image>
           </a-marker>
 
           <!-- Sesame oil -->
           <a-marker type="pattern" url="patterns/pattern-sesameOil.patt">
                <a-box src="images/sesameoil.jpg" scale="2 2 2" ></a-box>
+
                <a-image src="images/buttonseefood.png" rotation="-90 0 0" position="0 0 -3" scale="3 1 1"></a-image>
           </a-marker>
 
           <!-- egg -->
           <a-marker type="pattern" url="patterns/pattern-eggs.patt">
-               <!-- <a-entity id="egg" scale="0.6 0.6 0.6" position="0 0 .5" rotation="-70 0 0"> -->
-                    <a-entity scale="0.02 0.02 0.02" rotation="-70 0 0">
-                         <a-entity gltf-model="url(models/egg/scene.gltf)"></a-entity>
-                    </a-entity>
-               <!-- </a-entity> -->
-               <a-image src="images/buttonseefood.png" rotation="-90 0 0" position="0 0 -2" scale="3 1 1"></a-image>
+               <a-entity scale="0.02 0.02 0.02" rotation="-70 0 0">
+                    <a-entity gltf-model="url(models/egg/scene.gltf)"></a-entity>
+               </a-entity>
           </a-marker>
 
           <!-- chicken -->
           <a-marker type="pattern" url="patterns/pattern-chicken.patt">
-                    <a-entity scale="1 1 1" rotation="-70 0 0">
-                         <a-entity gltf-model="url(models/chicken/scene.gltf)"></a-entity>
-                    </a-entity>
-               <a-image src="images/buttonseefood.png" rotation="-90 0 0" position="0 0 -3" scale="3 1 1"></a-image>
+               <a-entity scale="1 1 1" rotation="-70 0 0">
+                    <a-entity gltf-model="url(models/chicken/scene.gltf)"></a-entity>
+               </a-entity>
           </a-marker>
 
           <!-- Joe's face -->
