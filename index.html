@@ -60,7 +60,7 @@
 
           <!-- mustard -->
           <a-marker type="pattern" url="patterns/pattern-mustard.patt">
-               <a-entity id="mustard" gltf-model="url(models/mustard/scene.gltf)" scale="13 13 13" position="0 0 1" rotation="-90 0 0"></a-entity>
+               <a-entity id="mustard" data-id="8" id="mustard" gltf-model="url(models/mustard/scene.gltf)" scale="13 13 13" position="0 0 1" rotation="-90 0 0"></a-entity>
 
                <a-image src="images/buttonseefood.png" rotation="-90 0 0" position="3 0 -2" scale="3 1 1"></a-image>
           </a-marker>
@@ -69,8 +69,6 @@
           <!-- mayonnaise -->
           <a-marker type="pattern" url="patterns/pattern-mayonnaise.patt">
                <a-entity id="mayonnaise" gltf-model="url(models/mayonnaise/scene.gltf)" scale="0.2 0.2 0.2" position="0 0 0.75" rotation="-80 0 0"></a-entity>
-
-               <a-image src="images/buttonseefood.png" rotation="-90 0 0" position="3 0 -2" scale="3 1 1"></a-image>
           </a-marker>
 
 
@@ -98,7 +96,7 @@
 
           <!-- soySauce -->
           <a-marker type="pattern" url="patterns/pattern-soySauce.patt">
-               <a-entity rotation="-90 0 0" position="0 0 17.5" scale="20 20 20">
+               <a-entity id="soySauce" data-id="7" rotation="-90 0 0" position="0 0 17.5" scale="20 20 20">
                     <a-entity obj-model="obj:url(models/soySauce/soy_sauce_00.obj); mtl:url(models/soySauce/soy_sauce_00.mtl)"></a-entity>
                </a-entity>
 
@@ -129,16 +127,16 @@
           
           <!-- frozen veggies -->
           <a-marker type="pattern" url="patterns/pattern-frozenVeggies.patt">
-               <a-box src="images/frozenveggies.jpg" scale="3 3 3" ></a-box>
+               <a-box id="frozenVeggies" data-id="10" src="images/frozenveggies.jpg" scale="3 3 3" ></a-box>
 
-               <a-image src="images/buttonseefood.png" rotation="-90 0 0" position="3 0 0" scale="3 1 1"></a-image>
+               <a-image src="images/buttonseefood.png" rotation="-90 0 0" position="3.3 0 0" scale="3 1 1"></a-image>
           </a-marker>
 
           <!-- Sesame oil -->
           <a-marker type="pattern" url="patterns/pattern-sesameOil.patt">
-               <a-box src="images/sesameoil.jpg" scale="2 2 2" ></a-box>
+               <a-box id="sesameOil" data-id="9" src="images/sesameoil.jpg" scale="2 2 2" ></a-box>
 
-               <a-image src="images/buttonseefood.png" rotation="-90 0 0" position="3 0 0" scale="4 1 1"></a-image>
+               <a-image src="images/buttonseefood.png" rotation="-90 0 0" position="3.2 0 0" scale="4 1 1"></a-image>
           </a-marker>
 
           <!-- egg -->
@@ -162,62 +160,28 @@
      </a-scene>
 
      <script>
-          document.querySelector("#salt-pepper").addEventListener("click", function(){
-               console.log("Salt Pepper was clicked!");
-               // let id =console.log(this.getAttribute("data-id"));
-               // window.location = "http://www.google.com"
-               // window.location = `http://www.oursit.herokku.com/brandRec/${id}`;
-          })
-          
-          document.querySelector("#lettuce").addEventListener("click", function(){
-               console.log("lettuce was clicked!");
-               console.log(this.getAttribute("id"));
-               // window.location = "http://www.google.com/";
-          })
-          
-          document.querySelector("#cheese").addEventListener("click", function(){
-               console.log("cheese was clicked!");
-               console.log(this.getAttribute("id"));
-               // window.location = "http://www.google.com/";
-          })
-
-          document.querySelector("#onion").addEventListener("click", function(){
-               console.log("onion was clicked!");
-               console.log(this.getAttribute("id"));
-               // window.location = "http://www.google.com/";
-          })
-
-          document.querySelector("#mustard").addEventListener("click", function(){
-               console.log("mustard was clicked!");
-               console.log(this.getAttribute("id"));
-               // window.location = "http://www.google.com/";
-          })
-
-          document.querySelector("#mayonnaise").addEventListener("click", function(){
-               console.log("mayonnaise was clicked!");
-               console.log(this.getAttribute("id"));
-               // window.location = "http://www.google.com/";
-          })
-     
-          document.querySelector("#tomato").addEventListener("click", function(){
+          document.querySelector("#soySauce").addEventListener("click", function(){
                
                let dataId = parseInt(this.getAttribute("data-id"));
-               console.log(dataId);
                window.location = `https://seefood-app.herokuapp.com/brandrec/${dataId}`;
-               // open(url, `https://seefood-app.herokuapp.com/brandrec/${dataId}`);
-               //  = `https://seefood-app.herokuapp.com/brandrec/${dataId}`;
           })
-
-          document.querySelector("#bread").addEventListener("click", function(){
-               console.log("bread was clicked!");
-               console.log(this.getAttribute("id"));
-               // window.location = "http://www.google.com/";
+          
+          document.querySelector("#mustard").addEventListener("click", function(){
+               
+               let dataId = parseInt(this.getAttribute("data-id"));
+               window.location = `https://seefood-app.herokuapp.com/brandrec/${dataId}`;
           })
-
-          document.querySelector("#beef").addEventListener("click", function(){
-               console.log("beef was clicked!");
-               console.log(this.getAttribute("id"));
-               // window.location = "http://www.google.com/";
+          
+          document.querySelector("#sesameOil").addEventListener("click", function(){
+               
+               let dataId = parseInt(this.getAttribute("data-id"));
+               window.location = `https://seefood-app.herokuapp.com/brandrec/${dataId}`;
+          })
+          
+          document.querySelector("#frozenVeggies").addEventListener("click", function(){
+               
+               let dataId = parseInt(this.getAttribute("data-id"));
+               window.location = `https://seefood-app.herokuapp.com/brandrec/${dataId}`;
           })
      </script>
 </body>
